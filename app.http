@@ -1,0 +1,47 @@
+###-------------------Alll items-------##
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech
+###-------------------API-1-------##
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?status=TO%20DO
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH&status=IN%20PROGRESS
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?search_q=Buy
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?category=WORK&status=DONE
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?category=HOME
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/?category=LEARNING&priority=HIGH
+##########          API-2---------------------########
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+#-------------------API-3----------------------#
+GET https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/agenda/?date=2021-12-12
+#-------------API-4------------####
+POST https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/
+Content-Type:application/json
+{
+ "id": 13,
+ "todo": "Buy bk",
+ "priority": "LOW",
+ "status": "IN PROGRESS",
+ "category": "LEARNING",
+ "dueDate": "2021-12-12"
+}
+#-----------APi-5---------#
+PUT https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type:application/json
+{ 
+    "status": "DONE" 
+}
+PUT https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type:application/json
+{ "priority": "LOW" }
+PUT https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type:application/json
+{
+"todo": "Clean the garden"
+}
+PUT https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type:application/json
+{ "category": "LEARNING" }
+PUT https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type:application/json
+{ "dueDate": "2021-01-12" }
+#------------APi-6-----------#
+DELETE https://srisakthin356jnjscadoqbs.drops.nxtwave.tech/todos/1/
